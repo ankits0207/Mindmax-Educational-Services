@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 1088px;
+        }
+        .style5
+        {
+            height: 32px;
+            font-size: xx-large;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #000000;
+            width: 262px;
+        }
+        .style6
+        {
+            height: 32px;
+            font-size: x-large;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #000000;
+            width: 551px;
+        }
+        .style10
+        {
+            height: 33px;
+            font-size: medium;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #FFFFFF;
+            width: 262px;
+        }
+        .style13
+        {
+            height: 32px;
+            font-size: xx-large;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #000000;
+            width: 228px;
+        }
+        .style14
+        {
+            height: 33px;
+            font-size: medium;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #FFFFFF;
+            width: 228px;
+        }
+        .style15
+        {
+            height: 33px;
+            font-size: medium;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Arial Unicode MS";
+            color: #FFFFFF;
+            background-color: #FFFFFF;
+            width: 551px;
+        }
+        .style16
+        {
+            height: 408px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style13">
+                    <asp:Image ID="Image1" runat="server" Height="120px" 
+                        ImageUrl="~/Img/ALDINE.png" Width="150px" />
+                </td>
+                <td class="style6">
+                    MINDMAX<br />
+                    EDUCATIONAL SERVICES<br />
+                    WEB PORTAL<br />
+                    WELCOMES YOU</td>
+                <td class="style5">
+                    <asp:Image ID="Image2" runat="server" Height="120px" ImageUrl="~/Img/MES.jpg" 
+                        Width="150px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style14">
+                    <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                        CausesValidation="False">LOGIN</asp:LinkButton>
+                </td>
+                <td class="style15">
+                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" 
+                        onclick="LinkButton2_Click">LOGOUT</asp:LinkButton>
+                </td>
+                <td class="style10">
+                    <asp:LinkButton ID="LinkButton3" runat="server" CausesValidation="False" 
+                        onclick="LinkButton3_Click">CONTACT US</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="style16" colspan="3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" 
+                    style="color: #FFFFFF; font-weight: 700; text-align: center; background-color: #FF9933">
+                    © Mindmax Educational Services.All Rights Reserved.</td>
+            </tr>
+            </table>
+    </div>
+    </form>
+</body>
+</html>
